@@ -4,7 +4,7 @@ include 'config.php';
 
 $sql = "select e.* " . 
 		"from portfolio e WHERE e.mostra = 1 " .
-		"order by e.id DESC limit 50";
+		"order by e.id DESC limit 15";
 
 try {
 	$dbh = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);	
