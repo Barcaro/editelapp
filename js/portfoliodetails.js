@@ -1,9 +1,9 @@
 $('#detailsPage').live('pageshow', function(event) {
 	var id = getUrlVars()["id"];
-	$.getJSON(serviceURL + 'getportfolio.php?id='+id+ '&callback=?', displayEmployee);
+	$.getJSON(serviceURL + 'getportfolio.php?id='+id+ '&callback=?', displayPortfolio);
 });
 
-function displayEmployee(data) {
+function displayPortfolio(data) {
 	var portfolio = data.item;
 
 	$('#portfolioPic').attr('src', 'pics/' + portfolio.picture);

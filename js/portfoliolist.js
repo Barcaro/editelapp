@@ -1,5 +1,3 @@
-var serviceURL = "http://www.editeltn.it/_demo/services/";
-
 var portfolio;
 
 function stripslashes (str) {
@@ -32,10 +30,10 @@ function stripslashes (str) {
 }
 
 $('#portfolioListPage').bind('pageinit', function(event) {
-	getEmployeeList();
+	getPortfolioList();
 });
 
-function getEmployeeList() {
+function getPortfolioList() {
 
 	$.getJSON(serviceURL + 'getportfolios.php' + '?callback=?', function(data) {
 		$('#portfolioList li').remove();

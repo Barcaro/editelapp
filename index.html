@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
 <link rel="stylesheet" href="css/styles.css" />
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+
 </head>
     
 <body>
@@ -19,22 +23,45 @@
          <ul id="employeeList" data-role="listview" data-filter="true"></ul>
     </div>		
 
-	<div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="footer" data-id="nav1" data-position="fixed">
         <div data-role="navbar">
             <ul>
-                <li><a href="index.html" class="ui-btn-active ui-state-persist">Staff</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#employeeListPage" class="ui-btn-active ui-state-persist">Staff</a></li>
+                <li><a href="#portfolioListPage">Portfolio</a></li>
             </ul>
         </div><!-- /navbar -->
     </div><!-- /footer -->
 
 </div>
 
-<script src="js/jquery.js"></script>
-<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+
+<div id="portfolioListPage" data-role="page" >
+
+	<div data-role="header" data-position="fixed">
+		<h1>Editel portfolio</h1>
+	</div>
+
+	<div data-role="content">
+         <ul id="portfolioList" data-role="listview" data-filter="true"></ul>
+    </div>	
+        
+	<div data-role="footer" data-id="nav1" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#employeeListPage">Staff</a></li>
+                <li><a href="#portfolioListPage" class="ui-btn-active ui-state-persist">Portfolio</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div><!-- /footer -->
+
+</div>
+
 <script src="js/employeelist.js"></script>
 <script src="js/employeedetails.js"></script>
 <script src="js/reportlist.js"></script>
+<script src="js/portfoliolist.js"></script>
+<!--<script src="js/portfoliodetails.js"></script>-->
+<script src="js/reportlistportfolio.js"></script>
 <script src="phonegap.js"></script>  
 </body>
 
