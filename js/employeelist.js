@@ -1,4 +1,4 @@
-var serviceURL = "http://dev.graficheantiga.it/temp/services/";
+var serviceURL = "http://www.editeltn.it/_demo/services/";
 
 var employees;
 
